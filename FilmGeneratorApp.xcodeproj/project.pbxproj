@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		685FABE826FFCC270037BE2A /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685FABE726FFCC270037BE2A /* Film.swift */; };
+		685FABEA26FFCD3B0037BE2A /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685FABE926FFCD3B0037BE2A /* DetailedViewController.swift */; };
 		687EA0BE26FF4C6500C2B654 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687EA0BD26FF4C6500C2B654 /* AppDelegate.swift */; };
 		687EA0C026FF4C6500C2B654 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687EA0BF26FF4C6500C2B654 /* SceneDelegate.swift */; };
-		687EA0C226FF4C6500C2B654 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687EA0C126FF4C6500C2B654 /* ViewController.swift */; };
+		687EA0C226FF4C6500C2B654 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687EA0C126FF4C6500C2B654 /* MainViewController.swift */; };
 		687EA0C526FF4C6500C2B654 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 687EA0C326FF4C6500C2B654 /* Main.storyboard */; };
 		687EA0C726FF4C6800C2B654 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 687EA0C626FF4C6800C2B654 /* Assets.xcassets */; };
 		687EA0CA26FF4C6800C2B654 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 687EA0C826FF4C6800C2B654 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		685FABE726FFCC270037BE2A /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
+		685FABE926FFCD3B0037BE2A /* DetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
 		687EA0BA26FF4C6500C2B654 /* FilmGeneratorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilmGeneratorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		687EA0BD26FF4C6500C2B654 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		687EA0BF26FF4C6500C2B654 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		687EA0C126FF4C6500C2B654 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		687EA0C126FF4C6500C2B654 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		687EA0C426FF4C6500C2B654 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		687EA0C626FF4C6800C2B654 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		687EA0C926FF4C6800C2B654 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +62,9 @@
 			children = (
 				687EA0BD26FF4C6500C2B654 /* AppDelegate.swift */,
 				687EA0BF26FF4C6500C2B654 /* SceneDelegate.swift */,
-				687EA0C126FF4C6500C2B654 /* ViewController.swift */,
+				687EA0C126FF4C6500C2B654 /* MainViewController.swift */,
+				685FABE926FFCD3B0037BE2A /* DetailedViewController.swift */,
+				685FABE726FFCC270037BE2A /* Film.swift */,
 				687EA0C326FF4C6500C2B654 /* Main.storyboard */,
 				687EA0C626FF4C6800C2B654 /* Assets.xcassets */,
 				687EA0C826FF4C6800C2B654 /* LaunchScreen.storyboard */,
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				687EA0C226FF4C6500C2B654 /* ViewController.swift in Sources */,
+				687EA0C226FF4C6500C2B654 /* MainViewController.swift in Sources */,
 				687EA0BE26FF4C6500C2B654 /* AppDelegate.swift in Sources */,
+				685FABEA26FFCD3B0037BE2A /* DetailedViewController.swift in Sources */,
+				685FABE826FFCC270037BE2A /* Film.swift in Sources */,
 				687EA0C026FF4C6500C2B654 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,7 +304,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.FilmGeneratorApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +323,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.FilmGeneratorApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
